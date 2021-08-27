@@ -44,3 +44,5 @@ end
     <%= link_to "All Users", users_path, class: "nav-link" %>
 </li>
 <!-- now add the code above after <% if logged_in? %> to allow us to go to users page -->
+
+<!-- try the code -->

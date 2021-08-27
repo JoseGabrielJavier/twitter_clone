@@ -1,0 +1,15 @@
+<%= form_with(url: sessions_path, scope: :session, local: true) do |f| %>
+    <form>
+        <div class="mb-3">
+            <%= f.label :email, class: "form-label"%>
+            <%= f.email_field :email, class: "form-control", placeholder: "Email" %>
+        </div>
+        <div class="mb-3">
+            <%= f.label :password, class: "form-label"%>
+            <%= f.password_field :password, class: "form-control", placeholder: "Password" %>
+        </div>
+        <div class="d-grid gap-2">
+            <%= f.submit yield(:button_text), class: "btn btn-primary" %>
+        </div>
+    </form>
+<% end %>
